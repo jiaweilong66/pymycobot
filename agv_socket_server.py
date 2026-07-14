@@ -8,7 +8,7 @@ import time
 from pymycobot.myagvplus import MyAGVPlus
 
 # 初始化实例
-agv = MyAGVPlus("/dev/myagvplus_controller", 921600, "/dev/ttyACM0", 115200)
+agv = MyAGVPlus("/dev/ttyACM0", 921600, "/dev/ttyCH341USB0", 115200)
 
 class AGVSocketServer:
     def __init__(self, host="0.0.0.0", port=9000):
